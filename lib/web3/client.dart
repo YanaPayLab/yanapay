@@ -42,7 +42,7 @@ Future<void> obtenerBalace(String privateKey) async {
 
 Future<void> sendYanaPay(String keyBuyer, int pay) async {
   const String privateKeyYanaPay =
-    '99cdd6e2743067b330678203f53b9b269d87ccf17352323802df1472f57c7ecc';
+    '';
   print('======= Enviar a la billetera Yanapay =========');
   final client = Web3Client(rpcUrl, Client());
   final credentialsYanaPay = EthPrivateKey.fromHex(privateKeyYanaPay);
@@ -73,7 +73,7 @@ Future<void> sendYanaPay(String keyBuyer, int pay) async {
 Future<void> sendSeller(String keySeller, int pay) async {
   print('======== Enviar a la billetera del vendedor =========');
   const String privateKeyYanaPay =
-    '99cdd6e2743067b330678203f53b9b269d87ccf17352323802df1472f57c7ecc';
+    '';
   final client = Web3Client(rpcUrl, Client());
   final credentialsSeller = EthPrivateKey.fromHex(keySeller);
   final credentialsYanaPay = EthPrivateKey.fromHex(privateKeyYanaPay);
